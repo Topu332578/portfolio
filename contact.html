@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Md. Touhidul Islam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Touhidul.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Contact Me</h1>
+        <p>
+            Feel free to reach out for project collaborations, software queries, or academic discussions. 
+            You can email me directly at <a href="mailto:touhidultopu08@gmail.com">touhidultopu50@gmail.com</a> or fill out the form below.
+        </p>
+
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Inquiry Type (Radio):</label>
+                <div class="inline-options">
+                    <label><input type="radio" name="inquiry" value="Project" checked> Project Collaboration</label>
+                    <label><input type="radio" name="inquiry" value="Job"> Internship / Hiring</label>
+                    <label><input type="radio" name="inquiry" value="General"> General Message</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Select Service / Subject (Dropdown):</label>
+                <select id="topic" name="topic">
+                    <option value="Android App Development">Android App Development</option>
+                    <option value="Web Design & Development">Web Design & Development</option>
+                    <option value="Desktop Software">Desktop Software</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Contact Method (Checkbox):</label>
+                <div class="inline-options">
+                    <label><input type="checkbox" name="contact_method" value="Email" checked> Email</label>
+                    <label><input type="checkbox" name="contact_method" value="GitHub"> GitHub Discussion</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formFeedback" class="feedback-msg"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Md. Touhidul Islam (ID: 0242310005101963) | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
